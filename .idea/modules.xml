@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/examples.iml" filepath="$PROJECT_DIR$/examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-librarys/java-librarys.iml" filepath="$PROJECT_DIR$/java-librarys/java-librarys.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-librarys/java-librarys-spring-mvc/java-librarys-spring-mvc.iml" filepath="$PROJECT_DIR$/java-librarys/java-librarys-spring-mvc/java-librarys-spring-mvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-samples/java-samples.iml" filepath="$PROJECT_DIR$/java-samples/java-samples.iml" />
+    </modules>
+  </component>
+</project>
