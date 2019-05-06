@@ -1,0 +1,13 @@
+dist
+node_modules
+.DS_Store
+*.iml
+target/
+.idea/
+logs/
+integration/test-output
+.settings/
+.project
+.factorypath
+bin/
+
