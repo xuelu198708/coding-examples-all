@@ -1,0 +1,21 @@
+package com.example.demo.service;
+
+import com.example.demo.config.UserProperties;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+/**
+ * Created by xuelu
+ * 2019-06-04.
+ */
+@Service
+public class UserService {
+
+    @Autowired
+    private UserProperties userProperties;
+
+    public String getUserName(){
+        return userProperties.getName();
+    }
+
+}

@@ -1,4 +1,6 @@
-package example.util.concurrent;
+package examples.util.concurrent;
+
+import org.junit.Test;
 
 import java.util.Date;
 import java.util.concurrent.CountDownLatch;
@@ -8,8 +10,10 @@ import java.util.concurrent.TimeUnit;
  * Created by xuelu
  * 2019-04-28.
  */
-public class CountDownLatchExample {
-    public static void main(String[] args) throws InterruptedException {
+public class TestCountDownLatch {
+
+    @Test
+    public void test() throws InterruptedException {
         int nThreads = 5;
         final CountDownLatch startGate = new CountDownLatch(1);
         final CountDownLatch endGate = new CountDownLatch(nThreads);
