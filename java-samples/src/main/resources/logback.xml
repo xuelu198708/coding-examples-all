@@ -10,7 +10,7 @@
         <!--<filter class="example.logback.filters.SampleFilter"/>-->
         <encoder>
             <pattern>
-                %-4relative [%thread] %-5level %logger - %msg%n
+                %-4relative [%thread] %-5level %logger - %X{tid}|%msg%n
             </pattern>
         </encoder>
     </appender>

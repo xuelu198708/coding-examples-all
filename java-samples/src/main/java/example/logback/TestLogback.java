@@ -3,6 +3,7 @@ package example.logback;
 import lombok.Data;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.slf4j.MDC;
 
 /**
  * Created by xuelu
@@ -13,9 +14,14 @@ public class TestLogback {
     private static Logger logger = LoggerFactory.getLogger(TestLogback.class);
 
     public static void main(String[] args) {
+
         Person person = new Person();
         person.setName("xxx");
         person.setAddress("aaaa");
+        logger.info("person: {}", person);
+        logger.info("xxx: {}", "xxx");
+
+        MDC.put("tid", "11111");
         logger.info("person: {}", person);
         logger.info("xxx: {}", "xxx");
     }
