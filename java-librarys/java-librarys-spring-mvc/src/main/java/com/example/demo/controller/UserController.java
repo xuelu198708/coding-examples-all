@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.aspect.Entrance;
 import com.example.demo.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    @Entrance
     @GetMapping("name")
     public String getUserName(){
         return userService.getUserName();
