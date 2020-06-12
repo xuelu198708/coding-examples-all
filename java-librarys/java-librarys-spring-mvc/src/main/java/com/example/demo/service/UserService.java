@@ -14,6 +14,9 @@ public class UserService {
     @Autowired
     private UserProperties userProperties;
 
+//    @Autowired
+    private ServiceB serviceB;
+
     public String getUserName(){
         return userProperties.getName();
     }

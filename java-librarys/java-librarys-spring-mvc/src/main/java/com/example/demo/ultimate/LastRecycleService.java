@@ -9,12 +9,11 @@ import org.springframework.stereotype.Component;
  * Created by xuelu.xl on 2020-06-10.
  */
 @Component
-public class DemoRecycleService {
+public class LastRecycleService {
 
     @Autowired
     private ServiceA serviceA;
 
     @Autowired
-
     private ServiceC serviceC;
 }
