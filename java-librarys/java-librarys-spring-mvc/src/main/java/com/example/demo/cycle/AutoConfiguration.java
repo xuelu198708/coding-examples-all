@@ -1,7 +1,7 @@
-package com.example.demo.config;
+package com.example.demo.cycle;
 
-import com.example.demo.service.ServiceA;
-import com.example.demo.service.ServiceB;
+import com.example.demo.cycle.ServiceA;
+import com.example.demo.cycle.ServiceB;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

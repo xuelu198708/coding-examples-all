@@ -1,8 +1,6 @@
-package com.example.demo.service;
+package com.example.demo.cycle;
 
 import org.springframework.beans.factory.annotation.Autowired;
-
-import javax.annotation.Resource;
 
 /**
  * Created by xuelu.xl on 2020-06-10.
@@ -18,6 +16,10 @@ public class ServiceA {
 
     public void setServiceB(ServiceB serviceB) {
         this.serviceB = serviceB;
+    }
+
+    public ServiceA() {
+        System.out.println("ServiceA construct");
     }
 
     public void sayIt(){

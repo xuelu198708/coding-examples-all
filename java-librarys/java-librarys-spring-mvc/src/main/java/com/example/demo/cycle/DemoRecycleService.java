@@ -1,15 +1,14 @@
-package com.example.demo.aspect;
+package com.example.demo.cycle;
 
-import com.example.demo.service.ServiceA;
-import com.example.demo.service.ServiceC;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.DependsOn;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 /**
  * Created by xuelu.xl on 2020-06-10.
  */
 @Component
+@DependsOn("serviceB")
 public class DemoRecycleService {
 
     @Autowired
