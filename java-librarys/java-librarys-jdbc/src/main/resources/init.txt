@@ -1,0 +1,7 @@
+create database app;
+
+CREATE TABLE to_do(id BIGINT auto_increment,gmt_create TIMESTAMP DEFAULT CURRENT_TIMESTAMP,gmt_modified TIMESTAMP DEFAULT CURRENT_TIMESTAMP,creator varchar(255),modifier varchar(255),is_deleted char(1),status varchar(64),content varchar(1024),type varchar(128), primary key (id)) default charset=utf8mb4;
+
+INSERT INTO to_do values (null ,null ,null,'xuelu','xuelu','n','valid','me','work');
+
+docker inspect mysql | grep -i ipaddress

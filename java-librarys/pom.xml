@@ -17,6 +17,7 @@
     <modules>
         <module>java-librarys-spring-mvc</module>
         <module>java-librarys-redis</module>
+        <module>java-librarys-jdbc</module>
     </modules>
 
     <dependencyManagement>

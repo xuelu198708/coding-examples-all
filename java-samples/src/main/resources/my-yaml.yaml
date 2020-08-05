@@ -1,0 +1,9 @@
+users:
+  - name:
+      - SELECT id FROM `wmp_sale_order` WHERE warehouse_id=? LIMIT 10;
+    groups:
+      - Premium
+  - name:
+      - user2
+    groups:
+      - Mod
