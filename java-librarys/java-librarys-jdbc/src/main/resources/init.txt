@@ -4,4 +4,6 @@ CREATE TABLE to_do(id BIGINT auto_increment,gmt_create TIMESTAMP DEFAULT CURRENT
 
 INSERT INTO to_do values (null ,null ,null,'xuelu','xuelu','n','valid','me','work');
 
+docker run -d -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=root mysql
+
 docker inspect mysql | grep -i ipaddress
