@@ -5,7 +5,6 @@ import com.google.common.base.Joiner;
 import com.google.common.base.Splitter;
 import org.apache.commons.io.IOUtils;
 
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -15,8 +14,7 @@ import java.util.Map;
 public class FetchKeyInfos {
 
     public static void main(String[] args) throws IOException {
-        String file = "/Users/zhuhan/IdeaProjects/apps/java-samples/src/main/resources/demo.txt";
-        List<String> lines = IOUtils.readLines(new FileInputStream(file), "utf-8");
+        List<String> lines = IOUtils.readLines(ClassLoader.getSystemResourceAsStream("demo.txt"), "utf-8");
         Splitter splitter = Splitter.on("|");
         Map<String, List<String>> map = new HashMap<>();
         for (String line : lines) {
